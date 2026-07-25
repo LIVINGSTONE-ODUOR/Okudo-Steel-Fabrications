@@ -3,11 +3,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { formatImagePath } from '@/lib/utils'
 
 const carouselImages = [
-  'gate.jpeg',
-  'staircase.jpeg',
-  'water tank stand higher.jpeg',
-  'windows installation.jpeg',
-  'staircase railing.jpeg',
+  'gate.webp',
+  'staircase.webp',
+  'water tank stand higher.webp',
+  'windows installation.webp',
+  'staircase railing.webp',
 ]
 
 export function HeroCarousel() {

@@ -3,6 +3,7 @@ import { SectionHeader } from '@/components/ui/SectionHeader'
 import { MotionWrap } from '@/components/ui/MotionWrap'
 import { ProjectImage } from '@/components/ui/ProjectImage'
 import { industries } from '@/data/siteData'
+import { formatImagePath } from '@/lib/utils'
 
 export function IndustriesServed() {
   return (
@@ -20,7 +21,7 @@ export function IndustriesServed() {
               <div className="group cursor-pointer">
                 <div className="relative h-[200px] md:h-[260px] overflow-hidden">
                   <ProjectImage
-                    src={`/images/${industry.image}`}
+                    src={formatImagePath(industry.image)}
                     alt={industry.title}
                     wrapperClassName="w-full h-full"
                     className="group-hover:scale-110 transition-transform duration-700"

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { ProjectImage } from './ProjectImage'
+import { formatImagePath } from '@/lib/utils'
 
 const stripImages = [
   { src: 'office door.jpeg', label: 'Commercial Access' },
@@ -46,7 +47,7 @@ export function ImageStrip() {
             >
               <div className="relative w-[240px] h-[180px] md:w-[280px] md:h-[200px] overflow-hidden border border-luxury-text/5 hover:border-luxury-gold/30 transition-all duration-500">
                 <ProjectImage
-                  src={`/images/${img.src}`}
+                  src={formatImagePath(img.src)}
                   alt={img.label}
                   wrapperClassName="w-full h-full"
                   className="group-hover:scale-110 transition-transform duration-700"

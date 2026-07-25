@@ -1,4 +1,13 @@
-import type { Project, Solution, Stat, Industry, Testimonial, ProcessStep } from '@/types'
+import type { Project, Solution, Stat, Industry, Testimonial, ProcessStep, ContactInfo } from '@/types'
+
+export const contactInfo: ContactInfo = {
+  phone: '0799544879',
+  phoneDisplay: '+254 799 544 879',
+  email: 'alusteel.ok@gmail.com',
+  location: 'Nairobi, Kenya',
+  whatsapp: '254799544879',
+  whatsappUrl: 'https://wa.me/254799544879',
+}
 
 export const stats: Stat[] = [
   { value: 15, label: 'Years of Experience' },
@@ -17,7 +26,7 @@ export const projects: Project[] = [
     completed: 'Completed 2025',
     description:
       'Premium architectural entrance systems, façade solutions, and outdoor lifestyle structures for a 32-unit luxury apartment development.',
-    image: 'high quality gate.jpeg',
+    image: 'high quality gate.webp',
     tags: ['Architectural Entrance Systems', 'Façade Solutions', 'Outdoor Structures'],
   },
   {
@@ -28,7 +37,7 @@ export const projects: Project[] = [
     completed: 'Completed 2024',
     description:
       'Comprehensive structural steel framework, premium façade glazing, and architectural safety systems for a 15-storey commercial tower.',
-    image: 'professional gate.jpeg',
+    image: 'professional gate.webp',
     tags: ['Structural Steel', 'Façade Glazing', 'Safety Systems'],
   },
   {
@@ -39,7 +48,7 @@ export const projects: Project[] = [
     completed: 'Completed 2025',
     description:
       'Custom outdoor lifestyle structures, modern shelter solutions, and architectural safety systems for a 5-star beachfront resort expansion.',
-    image: 'outdoor shade.jpeg',
+    image: 'outdoor shade.webp',
     tags: ['Outdoor Structures', 'Shelter Solutions', 'Safety Systems'],
   },
   {
@@ -50,7 +59,7 @@ export const projects: Project[] = [
     completed: 'Completed 2024',
     description:
       'Elegant staircase railings, balcony steelwork, and architectural safety systems for a 24-unit luxury garden estate development.',
-    image: 'staircase railings.jpeg',
+    image: 'staircase railings.webp',
     tags: ['Architectural Safety Systems', 'Balcony Steelwork', 'Staircase Railings'],
   },
   {
@@ -61,7 +70,7 @@ export const projects: Project[] = [
     completed: 'Completed 2025',
     description:
       'Custom window installations, modern façade glazing, and professional entrance systems for a premier office park development.',
-    image: 'window pane.jpeg',
+    image: 'window pane.webp',
     tags: ['Window Installations', 'Façade Glazing', 'Entrance Systems'],
   },
   {
@@ -72,7 +81,7 @@ export const projects: Project[] = [
     completed: 'Completed 2024',
     description:
       'Premium outdoor shade structures, balcony installations, and lifestyle frameworks for an exclusive beachfront villa collection.',
-    image: 'balcony steel.jpeg',
+    image: 'balcony steel.webp',
     tags: ['Outdoor Structures', 'Balcony Solutions', 'Shade Systems'],
   },
 ]
@@ -84,7 +93,7 @@ export const solutions: Solution[] = [
     description:
       'Custom-designed entrance solutions that define first impressions. Engineered for security, elegance, and lasting performance in premium residential and commercial developments.',
     category: 'Architectural',
-    image: 'high quality gate.jpeg',
+    image: 'high quality gate.webp',
     size: 'large',
   },
   {
@@ -93,7 +102,7 @@ export const solutions: Solution[] = [
     description:
       'High-performance building envelopes that define architectural character while maximizing energy efficiency and natural light.',
     category: 'Facade',
-    image: 'window design.jpeg',
+    image: 'window design.webp',
     size: 'small',
   },
   {
@@ -102,7 +111,7 @@ export const solutions: Solution[] = [
     description:
       'Integrated security systems engineered for modern developments. Balancing robust protection with elegant architectural integration.',
     category: 'Security',
-    image: 'steel door.jpeg',
+    image: 'steel door.webp',
     size: 'small',
   },
   {
@@ -111,7 +120,7 @@ export const solutions: Solution[] = [
     description:
       'Transform outdoor spaces into premium living environments. Custom-designed pergolas, canopies, and shade structures for luxury residences, hotels, and commercial spaces.',
     category: 'Lifestyle',
-    image: 'packing shade bigger.jpeg',
+    image: 'packing shade bigger.webp',
     size: 'large',
   },
   {
@@ -120,7 +129,7 @@ export const solutions: Solution[] = [
     description:
       'Elegant balustrades, railings, and safety barriers that protect without compromising design vision.',
     category: 'Safety',
-    image: 'staircase railing.jpeg',
+    image: 'staircase railing.webp',
     size: 'full',
   },
   {
@@ -129,31 +138,31 @@ export const solutions: Solution[] = [
     description:
       'Sophisticated canopy and shade structures that blend architectural beauty with functional protection.',
     category: 'Shelter',
-    image: 'water tank stand.jpeg',
+    image: 'water tank stand.webp',
     size: 'full',
   },
 ]
 
 export const industries: Industry[] = [
-  { id: 'residential', title: 'Residential Developments', description: 'Gated communities, apartment complexes', image: 'staircase and staircase window.jpeg' },
-  { id: 'luxury-homes', title: 'Luxury Homes', description: 'Private residences, villas, estates', image: 'high quality door.jpeg' },
-  { id: 'commercial', title: 'Commercial Buildings', description: 'Office towers, retail centres', image: 'professional transparent door.jpeg' },
-  { id: 'mixed-use', title: 'Mixed-Use Developments', description: 'Integrated lifestyle destinations', image: 'double window.jpeg' },
-  { id: 'hospitality', title: 'Hospitality Projects', description: 'Hotels, resorts, lodges', image: 'chill and drink backyard.jpeg' },
-  { id: 'industrial', title: 'Industrial Facilities', description: 'Warehouses, factories, logistics', image: 'watertank stand.jpeg' },
-  { id: 'institutional', title: 'Institutional Projects', description: 'Schools, hospitals, government', image: 'transparent door.jpeg' },
-  { id: 'infrastructure', title: 'Urban & Public Infrastructure', description: 'Transport, public spaces', image: 'professional packing.jpeg' },
+  { id: 'residential', title: 'Residential Developments', description: 'Gated communities, apartment complexes', image: 'staircase and staircase window.webp' },
+  { id: 'luxury-homes', title: 'Luxury Homes', description: 'Private residences, villas, estates', image: 'high quality door.webp' },
+  { id: 'commercial', title: 'Commercial Buildings', description: 'Office towers, retail centres', image: 'professional transparent door.webp' },
+  { id: 'mixed-use', title: 'Mixed-Use Developments', description: 'Integrated lifestyle destinations', image: 'double window.webp' },
+  { id: 'hospitality', title: 'Hospitality Projects', description: 'Hotels, resorts, lodges', image: 'chill and drink backyard.webp' },
+  { id: 'industrial', title: 'Industrial Facilities', description: 'Warehouses, factories, logistics', image: 'watertank stand.webp' },
+  { id: 'institutional', title: 'Institutional Projects', description: 'Schools, hospitals, government', image: 'transparent door.webp' },
+  { id: 'infrastructure', title: 'Urban & Public Infrastructure', description: 'Transport, public spaces', image: 'professional packing.webp' },
 ]
 
 export const testimonials: Testimonial[] = [
   {
-    id: 'jm',
+    id: 'OB',
     quote:
       "Okudo Engineering transformed our vision for Azure Heights into reality. Their understanding of architectural details and commitment to quality elevated the entire development. They are not just a supplier — they are a true project partner.",
-    author: 'James Mwangi',
+    author: 'Osiko Bijan',
     role: 'Director of Projects',
     company: 'Unity Homes',
-    initials: 'JM',
+    initials: 'OB',
   },
   {
     id: 'sk',
@@ -212,4 +221,15 @@ export const partnerLogos = [
   'Savannah Architects',
   'Crown Realty',
   'Urban Design Studio',
+]
+
+export const serviceOptions = [
+  'Architectural Entrance Systems',
+  'Façade & Glazing Solutions',
+  'Security & Access Solutions',
+  'Outdoor Lifestyle Structures',
+  'Architectural Safety Systems',
+  'Shelter & Shade Solutions',
+  'Structural Steel Fabrication',
+  'General Enquiry',
 ]

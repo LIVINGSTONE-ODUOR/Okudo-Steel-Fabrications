@@ -4,6 +4,7 @@ import { MotionWrap } from '@/components/ui/MotionWrap'
 import { ProjectImage } from '@/components/ui/ProjectImage'
 import { Button } from '@/components/ui/Button'
 import { projects } from '@/data/siteData'
+import { formatImagePath } from '@/lib/utils'
 
 export function FeaturedDevelopments() {
   return (
@@ -33,7 +34,7 @@ export function FeaturedDevelopments() {
               <div className="group cursor-pointer">
                 <div className="relative h-[320px] md:h-[400px] overflow-hidden">
                   <ProjectImage
-                    src={`/images/${project.image}`}
+                    src={formatImagePath(project.image)}
                     alt={project.title}
                     wrapperClassName="w-full h-full"
                     className="group-hover:scale-108 transition-transform duration-800"

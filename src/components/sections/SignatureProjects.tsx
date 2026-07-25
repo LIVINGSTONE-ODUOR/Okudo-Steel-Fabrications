@@ -3,6 +3,7 @@ import { Container } from '@/components/ui/Container'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { MotionWrap } from '@/components/ui/MotionWrap'
 import { ProjectImage } from '@/components/ui/ProjectImage'
+import { formatImagePath } from '@/lib/utils'
 
 const caseStudies = [
   {
@@ -12,7 +13,7 @@ const caseStudies = [
       "A 48-unit luxury gated community requiring comprehensive architectural metal solutions. Our team delivered custom entrance systems, façade glazing, outdoor structures, and safety systems that elevated the development's market position.",
     category: 'Residential Development',
     location: 'Nairobi',
-    image: 'matching fence and gate.jpeg',
+    image: 'matching fence and gate.webp',
     clientObjective: 'Create a distinct architectural identity that commands premium pricing in a competitive market.',
     engineeringHighlight: 'Custom gold-anodized aluminium entrance systems with integrated smart access technology.',
     badge: 'Before — After',
@@ -24,7 +25,7 @@ const caseStudies = [
       "A landmark 22-storey commercial development in Nairobi's premier business district. Our scope encompassed the entire structural steel framework, premium façade system, and integrated safety solutions.",
     category: 'Commercial Development',
     location: 'Nairobi CBD',
-    image: 'roll round window.jpeg',
+    image: 'roll round window.webp',
     clientObjective: 'Deliver a world-class commercial space that attracts multinational tenants and commands premium lease rates.',
     engineeringHighlight: 'Project completed 3 weeks ahead of schedule. Building achieved 95% occupancy within 6 months of completion.',
     badge: 'Commercial Excellence',
@@ -36,7 +37,7 @@ const caseStudies = [
       "A 6,000 sqft private residence requiring bespoke staircase railings, balcony steelwork, and window installations. Our team designed and fabricated custom architectural safety systems that became the home's defining feature.",
     category: 'Luxury Residence',
     location: 'Lavington, Nairobi',
-    image: 'staircase railing silver.jpeg',
+    image: 'staircase railing silver.webp',
     clientObjective: 'Create a signature interior feature that combines safety with sculptural elegance.',
     engineeringHighlight: 'Hand-finished stainless steel railings with integrated LED lighting and custom glass balustrades.',
     badge: 'Interior Excellence',
@@ -48,7 +49,7 @@ const caseStudies = [
       "A premier corporate centre requiring comprehensive window and façade installations across 8 floors. Our team delivered precision-fitted aluminium glazing systems that transformed the building's aesthetic and energy performance.",
     category: 'Commercial Installation',
     location: 'Gigiri, Nairobi',
-    image: 'windows 2.jpeg',
+    image: 'windows 2.webp',
     clientObjective: 'Achieve a uniform, modern façade while maximizing natural light and thermal efficiency.',
     engineeringHighlight: 'Thermally-broken aluminium frames with low-E glazing, installed with zero tolerance deviation.',
     badge: 'Installation Mastery',
@@ -76,7 +77,7 @@ export function SignatureProjects() {
               <div className={`relative ${isReversed ? 'md:order-2' : ''}`}>
                 <div className="relative h-[350px] md:h-[500px] overflow-hidden">
                   <ProjectImage
-                    src={`/images/${cs.image}`}
+                    src={formatImagePath(cs.image)}
                     alt={cs.title}
                     wrapperClassName="w-full h-full"
                     className="hover:scale-105 transition-transform duration-800"

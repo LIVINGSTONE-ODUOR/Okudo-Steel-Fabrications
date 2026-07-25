@@ -9,6 +9,7 @@ import { SignatureProjects } from '@/components/sections/SignatureProjects'
 import { IndustriesServed } from '@/components/sections/IndustriesServed'
 import { Testimonials } from '@/components/sections/Testimonials'
 import { CTA } from '@/components/sections/CTA'
+import { StickyWhatsApp } from '@/components/ui/StickyWhatsApp'
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <CTA />
       </main>
       <Footer />
+      <StickyWhatsApp />
     </>
   )
 }

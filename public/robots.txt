@@ -1,0 +1,9 @@
+# Okudo Engineering - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://okudoengineering.com/sitemap.xml
+
+# Disallow admin paths
+Disallow: /admin/

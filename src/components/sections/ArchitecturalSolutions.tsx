@@ -3,6 +3,7 @@ import { SectionHeader } from '@/components/ui/SectionHeader'
 import { MotionWrap } from '@/components/ui/MotionWrap'
 import { ProjectImage } from '@/components/ui/ProjectImage'
 import { ImageStrip } from '@/components/ui/ImageStrip'
+import { formatImagePath } from '@/lib/utils'
 
 const mainSolutions = [
   {
@@ -10,7 +11,7 @@ const mainSolutions = [
     description:
       'Custom-designed entrance solutions that define first impressions. Engineered for security, elegance, and lasting performance in premium residential and commercial developments.',
     category: 'Architectural',
-    image: 'door 1.jpeg',
+    image: 'door 1.webp',
     span: 'lg:col-span-7',
   },
   {
@@ -18,7 +19,7 @@ const mainSolutions = [
     description:
       'High-performance building envelopes that define architectural character while maximizing energy efficiency and natural light.',
     category: 'Facade',
-    image: 'window design.jpeg',
+    image: 'window design.webp',
     span: 'lg:col-span-5',
   },
   {
@@ -26,7 +27,7 @@ const mainSolutions = [
     description:
       'Integrated security systems engineered for modern developments. Balancing robust protection with elegant architectural integration.',
     category: 'Security',
-    image: 'steel door.jpeg',
+    image: 'steel door.webp',
     span: 'lg:col-span-5',
   },
   {
@@ -34,7 +35,7 @@ const mainSolutions = [
     description:
       'Transform outdoor spaces into premium living environments. Custom-designed pergolas, canopies, and shade structures for luxury residences, hotels, and commercial spaces.',
     category: 'Lifestyle',
-    image: 'packing shade bigger.jpeg',
+    image: 'packing shade bigger.webp',
     span: 'lg:col-span-7',
   },
 ]
@@ -43,12 +44,12 @@ const secondarySolutions = [
   {
     title: 'Architectural Safety Systems',
     description: 'Elegant balustrades, railings, and safety barriers that protect without compromising design vision.',
-    image: 'staircase railing installation.jpeg',
+    image: 'staircase railing installation.webp',
   },
   {
     title: 'Modern Shelter & Shade Solutions',
     description: 'Sophisticated canopy and shade structures that blend architectural beauty with functional protection.',
-    image: 'packing shade.jpeg',
+    image: 'packing shade.webp',
   },
 ]
 
@@ -67,7 +68,7 @@ export function ArchitecturalSolutions() {
             <MotionWrap key={sol.title} delay={i * 0.1} className={`md:col-span-12 ${sol.span} group cursor-pointer`}>
               <div className="img-zoom relative h-[300px] md:h-[420px] overflow-hidden">
                 <ProjectImage
-                  src={`/images/${sol.image}`}
+                  src={formatImagePath(sol.image)}
                   alt={sol.title}
                   wrapperClassName="w-full h-full"
                   className="group-hover:scale-108 transition-transform duration-800"
@@ -96,7 +97,7 @@ export function ArchitecturalSolutions() {
                 <div className="flex items-start gap-6 p-6 border border-luxury-text/10 hover:border-luxury-gold/30 transition-all duration-500">
                   <div className="w-20 h-20 shrink-0 overflow-hidden">
                     <ProjectImage
-                      src={`/images/${sol.image}`}
+                      src={formatImagePath(sol.image)}
                       alt={sol.title}
                       wrapperClassName="w-full h-full"
                       className="group-hover:scale-110 transition-transform duration-500"

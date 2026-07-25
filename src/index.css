@@ -35,10 +35,17 @@
 }
 
 /* ===== BASE STYLES ===== */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   font-family: var(--font-body);
   background: var(--color-luxury-bg);
   color: var(--color-luxury-text);
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -50,6 +57,7 @@ body {
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--color-luxury-bg); }
 ::-webkit-scrollbar-thumb { background: var(--color-luxury-gold); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #a07a38; }
 
 /* ===== GOLD LINE ===== */
 .gold-line {
@@ -105,6 +113,7 @@ body {
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 0;
 }
 .btn-gold-hover:hover::before {
   transform: scaleX(1);
@@ -121,3 +130,35 @@ body {
 .project-image:hover {
   transform: scale(1.08);
 }
+
+/* ===== MARQUEE ANIMATION ===== */
+.marquee-track {
+  animation: marquee 30s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ===== FOCUS VISIBLE ===== */
+:focus-visible {
+  outline: 2px solid var(--color-luxury-gold);
+  outline-offset: 2px;
+}
+
+/* ===== SELECTION COLOR ===== */
+::selection {
+  background: var(--color-luxury-gold);
+  color: white;
+}
+
+/* ===== IMAGE ZOOM CONTAINER ===== */
+.img-zoom {
+  overflow: hidden;
+}
+

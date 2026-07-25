@@ -50,3 +50,22 @@ export interface NavLink {
   label: string
   href: string
 }
+
+export interface ContactInfo {
+  phone: string
+  phoneDisplay: string
+  email: string
+  location: string
+  whatsapp: string
+  whatsappUrl: string
+}
+
+export interface ContactFormData {
+  name: string
+  phone: string
+  email: string
+  service: string
+  details: string
+}
+
+export type ContactFormStatus = 'idle' | 'submitting' | 'success' | 'error'
