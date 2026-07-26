@@ -158,17 +158,17 @@ export const testimonials: Testimonial[] = [
   {
     id: 'OB',
     quote:
-      "Okudo Engineering transformed our vision for Azure Heights into reality. Their understanding of architectural details and commitment to quality elevated the entire development. They are not just a supplier — they are a true project partner.",
+      "Okudo Engineering transformed our vision for Azure Heights into reality. Their understanding of architectural details and commitment to quality elevated the entire development. They are not just a supplier, they are a true project partner.",
     author: 'Osiko Bijan',
     role: 'Director of Projects',
     company: 'Unity Homes',
-    initials: 'OB',
+    initials: 'OBan',
   },
   {
     id: 'sk',
     quote:
       "We engaged Okudo for the structural steelwork on Westlands Business Tower. Their engineering precision and project management were exceptional. They delivered ahead of schedule with zero quality compromises. Our architects were thoroughly impressed.",
-    author: 'Sarah Kamau',
+    author: 'Damaris Ngina',
     role: 'CEO',
     company: 'Pinnacle Construction Group',
     initials: 'SK',
